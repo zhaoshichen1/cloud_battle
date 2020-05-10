@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myapplication.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_SimplePlay"
+            app:destination="@id/SimplePlay" />
+        <action
+            android:id="@+id/sample_control"
+            app:destination="@id/SampleControlVideo" />
+    </fragment>
+    <activity
+        android:id="@+id/SimplePlay"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second"
+        android:name="com.example.myapplication.SimplePlayer"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+        android:theme="@style/Theme.AppCompat.Full"
+        android:screenOrientation="landscape" />
+
+    <activity
+        android:id="@+id/SampleControlVideo"
+        android:name="com.example.myapplication.DetailControlActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+        android:theme="@style/Theme.AppCompat.Full"
+        android:screenOrientation="landscape" />
+
+</navigation>
