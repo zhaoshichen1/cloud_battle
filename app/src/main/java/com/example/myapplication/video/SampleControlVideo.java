@@ -59,6 +59,7 @@ public class SampleControlVideo extends StandardGSYVideoPlayer {
     @Override
     protected void init(Context context) {
         super.init(context);
+        GSYVideoType.setShowType(GSYVideoType.SCREEN_MATCH_FULL); // 默认拉伸至满屏，避免黑边
     }
 
     @Override

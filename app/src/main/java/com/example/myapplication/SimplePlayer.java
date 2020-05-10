@@ -28,7 +28,7 @@ public class SimplePlayer extends AppCompatActivity {
         videoPlayer =  (StandardGSYVideoPlayer)findViewById(R.id.video_player);
 
         // http://api.bilibili.com/x/tv/ugc/playurl?avid=9748596&build=102300&cid=16113998&platform=android&qn=64
-        String source1 = "http://upos-sz-mirrorkodo.bilivideo.com/upgcxcode/98/39/16113998/16113998-1-64.flv?e=ig8euxZM2rNcNbRMnwdVhwdlhWK3hwdVhoNvNC8BqJIzNbfqXBvEuENvNC8aNEVEtEvE9IMvXBvE2ENvNCImNEVEIj0Y2J_aug859r1qXg8gNEVE5XREto8z5JZC2X2gkX5L5F1eTX1jkXlsTXHeux_f2o859IB_&ua=tvproj&uipk=5&nbs=1&deadline=1589098456&gen=playurl&os=kodobv&oi=3752316687&trid=fadfa9eea0f1408f97feac85bd1592aft&upsig=c7ea02baf986cfa8919ab82a4de4e4b6&uparams=e,ua,uipk,nbs,deadline,gen,os,oi,trid&mid=0&logo=80000000";
+        String source1 = "http://upos-sz-mirrorks3.bilivideo.com/upgcxcode/98/39/16113998/16113998-1-80.flv?e=ig8euxZM2rNcNbRHhzdVhwdlhWezhwdVhoNvNC8BqJIzNbfqXBvEuENvNC8aNEVEtEvE9IMvXBvE2ENvNCImNEVEIj0Y2J_aug859r1qXg8gNEVE5XREto8z5JZC2X2gkX5L5F1eTX1jkXlsTXHeux_f2o859IB_&ua=tvproj&uipk=5&nbs=1&deadline=1589132830&gen=playurl&os=ks3bv&oi=3752316687&trid=6008a564ed3a469a8ee9a30073b12917t&upsig=e2e2c660edfced24d6b4aba17a1541c4&uparams=e,ua,uipk,nbs,deadline,gen,os,oi,trid&mid=0&logo=80000000";
         videoPlayer.setUp(source1, true, "测试视频");
 
         //增加封面
